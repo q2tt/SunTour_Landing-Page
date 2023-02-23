@@ -1,0 +1,140 @@
+//main: ../../style.less
+
+.tours-box {
+  .add-flex(flex, row, space-beetwen);
+  justify-content: space-between;
+  .add-size(100%, auto);
+  margin: 0 0 48px 0;
+
+  @media @size-s {
+    justify-content: space-around;
+  }
+
+  @media @size-xs {
+    .add-flex(flex, column, center);
+    align-items: center;
+  }
+}
+
+.tour {
+  .add-size(500px, auto);
+
+  @media @size-xl {
+    .add-size(470px, auto);
+  }
+  @media @size-l {
+    .add-size(435px, auto);
+  }
+  @media @size-md {
+    .add-size(340px, auto);
+  }
+
+  @media @size-s {
+    .add-size(250px, auto);
+  }
+  @media @size-xs {
+    margin: 0 auto;
+    .add-size(100%, auto);
+    max-width: 440px;
+  }
+
+  &:hover &__title {
+    cursor: pointer;
+    color: @red-color;
+    border-bottom: 1px solid rgba(112, 13, 13, 0.185);
+  }
+
+  &:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__link {
+    display: block;
+    .add-size(100%, 100%);
+    text-decoration: none;
+    color: none;
+  }
+
+  &__img-wrap {
+    .add-size(500px, 280px);
+    margin: 0 0 24px 0;
+    overflow: hidden;
+
+    @media @size-xl {
+      .add-size(470px, 240px);
+    }
+
+    @media @size-l {
+      .add-size(435px, 230px);
+    }
+
+    @media @size-md {
+      .add-size(340px, 180px);
+      margin: 0 0 18px 0;
+    }
+
+    @media @size-s {
+      .add-size(250px, 150px);
+    }
+
+    @media @size-xs {
+      .add-size(100%, 200px);
+      max-width: 440px;
+    }
+  }
+
+  &__img {
+    .add-size(100%, 100%);
+    transition: transform 0.25s;
+  }
+
+  &__info {
+    .add-flex(flex, row, space-between);
+  }
+
+  &__info_txt-box {
+    .add-size(80%, 80px);
+  }
+
+  &__title {
+    color: @black-color;
+    margin: 0 0 10px 0;
+    letter-spacing: 0.6px;
+    display: block;
+    width: fit-content;
+    border-bottom: 1px solid rgba(31, 30, 30, 0.185);
+    padding: 0 10px 0 0;
+  }
+
+  &__txt {
+    color: @black-color;
+  }
+
+  &__info_prise {
+    color: @black-color;
+    text-align: center;
+  }
+
+  &__current-prise {
+    color: @black-color;
+    letter-spacing: 3px;
+
+    @media @size-md {
+      letter-spacing: 1px;
+    }
+  }
+
+  &__old-prise {
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    line-height: 23px;
+    color: @gray-color;
+    padding: 0 5px;
+  }
+
+  &__old-prise_line {
+    text-align: center;
+    color: @red-color;
+    text-decoration: line-through;
+  }
+}

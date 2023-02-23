@@ -409,3 +409,221 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+body {
+  font-family: "Arial";
+}
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+@media (max-width: 1399px) {
+  .container {
+    width: 980px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+}
+.main-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+}
+@media (max-width: 1199px) {
+  .main-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .main-title {
+    font-size: 25px;
+    line-height: 130%;
+  }
+}
+.main-txt {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.tours-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-beetwen;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 0 0 48px 0;
+}
+@media (max-width: 767px) {
+  .tours-box {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 575px) {
+  .tours-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tour {
+  width: 500px;
+  height: auto;
+}
+@media (max-width: 1399px) {
+  .tour {
+    width: 470px;
+    height: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .tour {
+    width: 435px;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .tour {
+    width: 340px;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .tour {
+    width: 250px;
+    height: auto;
+  }
+}
+@media (max-width: 575px) {
+  .tour {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 440px;
+  }
+}
+.tour:hover .tour__title {
+  cursor: pointer;
+  color: #CB0000;
+  border-bottom: 1px solid rgba(112, 13, 13, 0.185);
+}
+.tour:hover .tour__img {
+  transform: scale(1.1);
+}
+.tour__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: none;
+}
+.tour__img-wrap {
+  width: 500px;
+  height: 280px;
+  margin: 0 0 24px 0;
+  overflow: hidden;
+}
+@media (max-width: 1399px) {
+  .tour__img-wrap {
+    width: 470px;
+    height: 240px;
+  }
+}
+@media (max-width: 1199px) {
+  .tour__img-wrap {
+    width: 435px;
+    height: 230px;
+  }
+}
+@media (max-width: 991px) {
+  .tour__img-wrap {
+    width: 340px;
+    height: 180px;
+    margin: 0 0 18px 0;
+  }
+}
+@media (max-width: 767px) {
+  .tour__img-wrap {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (max-width: 575px) {
+  .tour__img-wrap {
+    width: 100%;
+    height: 200px;
+    max-width: 440px;
+  }
+}
+.tour__img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.25s;
+}
+.tour__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tour__info_txt-box {
+  width: 80%;
+  height: 80px;
+}
+.tour__title {
+  color: #000000;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.6px;
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid rgba(31, 30, 30, 0.185);
+  padding: 0 10px 0 0;
+}
+.tour__txt {
+  color: #000000;
+}
+.tour__info_prise {
+  color: #000000;
+  text-align: center;
+}
+.tour__current-prise {
+  color: #000000;
+  letter-spacing: 3px;
+}
+@media (max-width: 991px) {
+  .tour__current-prise {
+    letter-spacing: 1px;
+  }
+}
+.tour__old-prise {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  line-height: 23px;
+  color: #777777;
+  padding: 0 5px;
+}
+.tour__old-prise_line {
+  text-align: center;
+  color: #CB0000;
+  text-decoration: line-through;
+}
