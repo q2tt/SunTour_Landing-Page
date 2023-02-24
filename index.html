@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,48 @@
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="nav">
         <div class="container">
-            <div class="nav__box">
-                nav
+
+            <div class="nav__container">
+                <div class="nav__logo-container">
+                    <a href="#" class="nav__logo-link">
+                        <object type="image/svg+xml" data="image.svg">
+                            <img class="nav__logo-svg" src="./dist/img/logo-suntour.svg" />
+                        </object>
+                    </a>
+
+                    <p class="nav__logo-txt">Мережа турагенств «Сонце в колі»</p>
+                </div>
+
+                <input id="menu-toggle" type="checkbox" />
+                <label class='nav__btn-container' for="menu-toggle">
+                    <div class='nav__button'></div>
+                </label>
+
+
+                <ul class="nav__menu">
+                    <li class="nav__menu-item nav__phone-box">
+                        <a class="nav__tel-num" href="tel:+0441234567">044 123-45-67</a>
+                        <p class="nav__tel-txt">зворотний дзвінок</p>
+                    </li>
+                    <li class="nav__menu-item nav__contact-box">
+                        <a class="nav__contact-link" href="http://#">
+                            <object type="image/svg+xml" data="image.svg">
+                                <img class="nav__contact-svg" src="./dist/img/fb.svg" />
+                            </object>
+                        </a>
+                        <a class="nav__contact-link" href="http://telegram.me">
+                            <object type="image/svg+xml" data="image.svg">
+                                <img class="nav__contact-svg" src="./dist/img/logos_telegram.svg" />
+                            </object>
+                        </a>
+                    </li>
+                </ul>
             </div>
+
         </div>
     </nav>
     <main>
@@ -36,22 +73,22 @@
                                     <img class="header__star-img" src="./dist/img/Star.svg" />
                                 </object>
                                 <object type="image/svg+xml" data="image.svg">
-                                    <img  class="header__star-img"  src="./dist/img/Star.svg" />
+                                    <img class="header__star-img" src="./dist/img/Star.svg" />
                                 </object>
                                 <object type="image/svg+xml" data="image.svg">
-                                    <img  class="header__star-img"  src="./dist/img/Star.svg" />
+                                    <img class="header__star-img" src="./dist/img/Star.svg" />
                                 </object>
                                 <object type="image/svg+xml" data="image.svg">
-                                    <img  class="header__star-img"  src="./dist/img/Star2.svg" />
+                                    <img class="header__star-img" src="./dist/img/Star2.svg" />
                                 </object>
                                 <object type="image/svg+xml" data="image.svg">
-                                    <img  class="header__star-img"  src="./dist/img/Star2.svg" />
+                                    <img class="header__star-img" src="./dist/img/Star2.svg" />
                                 </object>
-                                
+
                             </div>
                             <p class="header__hotel-prise">$256</p>
                         </div>
-                     </a>
+                    </a>
 
                     <div class="header__inf-b_revievs-line">
                         <div class="header__inf-b_revievs-item">
@@ -60,7 +97,7 @@
                         </div>
                         <div class="header__hotel-mark">
                             <p>8.4</p>
-                            
+
                         </div>
 
                         <div class="header__inf-b_revievs-item">
@@ -81,52 +118,52 @@
                         </div>
                     </div>
 
-                    <div class="header__inf-b_days-bl"> 
+                    <div class="header__inf-b_days-bl">
                         <p class="header__inf-b_days-num">320</p>
-                        <p  class="header__inf-b_days-txt">сонячних днів на рік</p>
+                        <p class="header__inf-b_days-txt">сонячних днів на рік</p>
                     </div>
 
                 </div>
             </header>
 
             <section class="tours-box">
-                
+
                 <div class="tour">
                     <a href="#" class="tour__link">
-                    <div class="tour__img-wrap">
-                        <img src="./dist/img/sea.png" alt="sea" class="tour__img">
-                    </div>
-                    <div class="tour__info">
-                        <div class="tour__info_txt-box">
-                            <h2 class="tour__title main-title">Шовковий шлях</h2>
-                            <p class="tour__txt main-txt">Екстремальний маршрут</p>
+                        <div class="tour__img-wrap">
+                            <img src="./dist/img/sea.png" alt="sea" class="tour__img">
                         </div>
-                        <div class="tour__info_prise">
-                            <h2 class="tour__current-prise main-title">$158</h2>
-                            
+                        <div class="tour__info">
+                            <div class="tour__info_txt-box">
+                                <h2 class="tour__title main-title">Шовковий шлях</h2>
+                                <p class="tour__txt main-txt">Екстремальний маршрут</p>
+                            </div>
+                            <div class="tour__info_prise">
+                                <h2 class="tour__current-prise main-title">$158</h2>
+
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 </div>
 
                 <div class="tour">
                     <a href="#" class="tour__link">
-                    <div class="tour__img-wrap">
-                        <img src="./dist/img/jump.png" alt="jump" class="tour__img">
-                    </div>
-                    <div class="tour__info">
-                        <div class="tour__info_txt-box">
-                            <h2 class="tour__title main-title">Роупджампінг</h2>
-                            <p class="tour__txt main-txt">Не дай Боже не любиш</p>
+                        <div class="tour__img-wrap">
+                            <img src="./dist/img/jump.png" alt="jump" class="tour__img">
                         </div>
-                        <div class="tour__info_prise">
-                            <h2 class="tour__current-prise main-title">$57</h2>
-                            <span class="tour__old-prise_line" >
-                                <span class="tour__old-prise">$90</span>
-                              </span>
+                        <div class="tour__info">
+                            <div class="tour__info_txt-box">
+                                <h2 class="tour__title main-title">Роупджампінг</h2>
+                                <p class="tour__txt main-txt">Не дай Боже не любиш</p>
+                            </div>
+                            <div class="tour__info_prise">
+                                <h2 class="tour__current-prise main-title">$57</h2>
+                                <span class="tour__old-prise_line">
+                                    <span class="tour__old-prise">$90</span>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 </div>
             </section>
 
@@ -137,7 +174,7 @@
                 <aside>aside</aside>
             </div>
         </div>
-        
+
 
     </main>
     <footer>
@@ -146,4 +183,5 @@
     </footer>
 
 </body>
+
 </html>
