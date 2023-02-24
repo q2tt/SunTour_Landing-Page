@@ -2,9 +2,13 @@
 
 .aside {
   height: 100%;
-  margin: 414px 0 0 10px;
+  margin: 414px 0 50px 10px;
   @media @size-s {
-    margin: 15px 0 0 70px;
+    margin: 15px 0 50px 70px;
+  }
+
+  @media @size-xs {
+    margin: 15px 0 23px 28px;
   }
 
   &__container {
@@ -34,6 +38,11 @@
     @media @size-md {
       font-size: 80px;
       line-height: 96px;
+    }
+
+    @media @size-xs {
+        font-size: 38px;
+        line-height: 46px;
     }
   }
   &__txt-title {

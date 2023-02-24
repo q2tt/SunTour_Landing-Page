@@ -1483,11 +1483,16 @@ body {
 }
 .aside {
   height: 100%;
-  margin: 414px 0 0 10px;
+  margin: 414px 0 50px 10px;
 }
 @media (max-width: 767px) {
   .aside {
-    margin: 15px 0 0 70px;
+    margin: 15px 0 50px 70px;
+  }
+}
+@media (max-width: 575px) {
+  .aside {
+    margin: 15px 0 23px 28px;
   }
 }
 .aside__container {
@@ -1524,6 +1529,12 @@ body {
   .aside__txt-num {
     font-size: 80px;
     line-height: 96px;
+  }
+}
+@media (max-width: 575px) {
+  .aside__txt-num {
+    font-size: 38px;
+    line-height: 46px;
   }
 }
 .aside__txt-title {
