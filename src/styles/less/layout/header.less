@@ -1,0 +1,343 @@
+//main: ../../style.less
+
+.header {
+  width: 100%;
+  margin: 0 0 50px 0;
+
+  &__img-wrap {
+    .add-size(100%, 553px);
+    background: url("./../img/image.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .add-flex(flex, column, flex-end);
+
+    @media @size-xl {
+      .add-size(100%, 500px);
+    }
+
+    @media @size-l {
+      .add-size(100%, 400px);
+    }
+
+    @media @size-xs {
+      .add-size(100%, 270px);
+    }
+  }
+
+  &__about-tour-box {
+    margin: 33px;
+    padding: 45px 40px;
+    text-align: center;
+    .add-size(250px, 250px);
+    border-radius: 50%;
+    background-color: rgba(255, 242, 0, 0.7);
+
+    @media @size-xl {
+      .add-size(200px, 200px);
+    }
+
+    @media @size-l {
+      .add-size(180px, 180px);
+    }
+
+    @media @size-xs {
+      .add-size(120px, 120px);
+      margin: 16px;
+      padding: 14px 14px;
+    }
+  }
+
+  &__about-tour-title {
+    margin: 0 0 40px 0;
+
+    @media @size-xl {
+      margin: 0 0 25px 0;
+    }
+
+    @media @size-xs {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__about-tour-txt {
+    font-family: "Trebuchet MS";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+
+    @media @size-xs {
+      font-size: 10px;
+      line-height: 14px;
+      margin: 0 0 4px 0;
+    }
+  }
+
+  &__about-tour-code {
+    display: block;
+    width: fit-content;
+    background-color: @black-color;
+    color: @white;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto;
+    padding: 3px 6px;
+
+    @media @size-xs {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 1px 3px;
+    }
+  }
+
+  &__info-block {
+    display: grid;
+    grid-template-columns: 1fr 422px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "title days"
+      "stars days";
+
+    @media @size-l {
+      grid-template-columns: 1fr 170px;
+    }
+
+    @media @size-md {
+      grid-template-columns: 1fr 0px;
+    }
+  }
+
+  &__hotel-link {
+    text-decoration: none;
+    color: @black-color;
+    cursor: pointer;
+  }
+
+  &__hotel-link:hover &__hotel-title {
+    color: @red-color;
+  }
+
+  &__inf-b_revievs-line {
+    grid-area: stars;
+    .add-flex(flex, row, space-between);
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media @size-l {
+      margin: 0px 10px 0px 0px;
+    }
+  }
+
+  &__star-img {
+    .add-size(27px, 27px);
+
+    @media @size-md {
+      .add-size(20px, 20px);
+    }
+
+    @media @size-xs {
+      .add-size(14px, 14px);
+    }
+  }
+
+  &__stars-box {
+    margin: 0 15px;
+    width: 180px;
+    
+    @media @size-xs {
+      width: 90px;
+    }
+  }
+
+  &__inf-b_name-hotel-line {
+    grid-area: title;
+    .add-flex(flex, row, space-between);
+    align-items: center;
+    margin: 23px 0 27px 0;
+
+    @media @size-l {
+      margin: 15px 10px 10px 0px;
+      width: 650px;
+    }
+
+    @media @size-md {
+      width: 500px;
+    }
+
+    @media @size-xs {
+      width: 100%;
+    }
+  }
+
+  &__revievs-item_txt {
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media @size-xs {
+      display: none;
+    }
+  }
+
+  &__reviev_txt {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__reviev_num {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  &__revievs-item_num {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media @size-xs {
+      display: none;
+    }
+  }
+
+  &__hotel-mark {
+    .add-size(52px, 52px);
+    background-color: @main-color;
+    line-height: 52px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: @white;
+
+    @media @size-md {
+      .add-size(44px, 44px);
+    }
+
+    @media @size-xs {
+      .add-size(30px, 30px);
+    }
+  }
+
+  &__hotel-mark p {
+    line-height: 52px;
+
+    @media @size-md {
+      line-height: 44px;
+      font-size: 21px;
+    }
+
+    @media @size-xs {
+      line-height: 30px;
+      font-size: 16px;
+    }
+  }
+
+  &__hotel-title {
+    display: block;
+    width: fit-content;
+    border-bottom: 1px solid rgba(31, 30, 30, 0.185);
+
+    @media @size-xs {
+      font-size: 18px;
+    }
+  }
+
+  &__hotel-prise {
+    display: block;
+    font-family: "Trebuchet MS";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 2px;
+
+    @media @size-xs {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__inf-b_days-bl {
+    grid-area: days;
+
+    @media @size-md {
+      display: none;
+    }
+  }
+
+  &__inf-b_days-bl::before {
+    content: "";
+    .add-size(422px, 65px);
+    background: url("./../img/header.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: relative;
+    top: -65px;
+    z-index: 1;
+
+    @media @size-l {
+      .add-size(250px, 30px);
+      top: -30px;
+      right: 80px;
+    }
+  }
+
+  &__inf-b_days-num {
+    font-family: "Trebuchet MS";
+    font-size: 88px;
+    line-height: 102px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: @gray-color;
+    width: 184px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -90px;
+    z-index: 4;
+    position: relative;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+
+    @media @size-l {
+      width: 170px;
+      font-size: 60px;
+      line-height: 70px;
+      padding: 0 0 0 20px;
+      margin-top: -50px;
+    }
+  }
+
+  &__inf-b_days-txt {
+    width: 184px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 31px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+
+    @media @size-l {
+      width: 150px;
+      padding: 0 0 0 0px;
+      font-size: 26px;
+      line-height: 29px;
+    }
+  }
+}
