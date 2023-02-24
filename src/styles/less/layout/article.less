@@ -1,0 +1,128 @@
+//main: ../../style.less
+
+.article {
+  width: 777px;
+
+  @media @size-xl {
+    width: 660px;
+  }
+
+  @media @size-md {
+    width: 500px;
+  }
+
+  @media @size-s {
+    width: 100%;
+  }
+
+  &__title {
+    font-family: "Trebuchet MS";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    margin: 0 0 33px 0;
+
+    @media @size-s {
+      font-size: 35px;
+      line-height: 120%;
+    }
+    @media @size-xs {
+      font-size: 26px;
+      line-height: 110%;
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__txt_bold {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 33px 0;
+
+    @media @size-xs {
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__txt {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 24px 0;
+
+    @media @size-xs {
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    margin: 0 0 33px 0;
+
+    @media @size-xs {
+      font-size: 20px;
+      line-height: 110%;
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__txt-border {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 33px 50px;
+    display: block;
+    width: 704px;
+    border-left: 8px solid @main-color;
+    padding: 10px 0 10px 16px;
+    font-style: italic;
+
+    @media @size-xl {
+      width: 554px;
+    }
+
+    @media @size-md {
+      width: 440px;
+      margin: 0 0 24px 26px;
+    }
+
+    @media @size-s {
+      width: calc(100% - 70px);
+      border-left: 5px solid @main-color;
+    }
+    @media @size-xs {
+      margin: 0 0 14px 10px;
+    }
+  }
+
+  &__title-mini {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 0 0 33px 0;
+
+    @media @size-xs {
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__ul-list {
+    margin: 24px 0;
+
+    @media @size-xs {
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__ul-item {
+    list-style-type: disc;
+    margin: 0 0 16px 40px;
+    font-size: 14px;
+    line-height: 19px;
+
+    @media @size-xs {
+      margin: 0 0 16px 15px;
+    }
+  }
+}

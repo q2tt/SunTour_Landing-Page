@@ -1,0 +1,65 @@
+//main: ../../style.less
+
+.aside {
+  height: 100%;
+  margin: 414px 0 0 10px;
+  @media @size-s {
+    margin: 15px 0 0 70px;
+  }
+
+  &__container {
+    .add-size(217px, 340px);
+
+    @media @size-xl {
+      .add-size(210px, auto);
+    }
+
+    @media @size-md {
+      .add-size(160px, auto);
+    }
+
+    @media @size-s {
+      .add-size(240px, auto);
+    }
+  }
+
+  &__txt-num {
+    font-family: "Trebuchet MS";
+    font-size: 100px;
+    line-height: 116px;
+    letter-spacing: -0.05em;
+    color: @gray-color;
+    margin: 0 0 10px 0;
+
+    @media @size-md {
+      font-size: 80px;
+      line-height: 96px;
+    }
+  }
+  &__txt-title {
+    font-size: 30px;
+    line-height: 31px;
+    margin: 0 0 10px 0;
+
+    @media @size-md {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__txt {
+    padding: 0 14px 0 0;
+    font-size: 20px;
+    line-height: 25px;
+    color: @gray-color;
+
+    @media @size-md {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    @media @size-s {
+      padding: 0 0 0 0;
+    }
+  }
+}
