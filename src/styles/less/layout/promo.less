@@ -1,0 +1,139 @@
+//main: ../../style.less
+
+.promo {
+  .add-flex(flex, column, baseline);
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin: 0 0 40px 0;
+
+  @media @size-xs {
+    margin: 0 0 20px 0;
+  }
+
+  &__content_wrap {
+    .add-flex(flex, row, space-beetwen);
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 24px 40px 24px;
+
+    @media @size-s {
+      .add-flex(flex, column, baseline);
+    }
+
+    @media @size-xs {
+      padding: 16px 14px 16px 14px;
+    }
+  }
+
+  &__sale_title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    color: @main-color;
+    width: 121px;
+
+    @media @size-s {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__code {
+    width: 600px;
+
+    @media @size-xl {
+      width: auto;
+      padding: 0 24px;
+    }
+
+    @media @size-xs {
+      padding: 0 14px;
+    }
+  }
+
+  &__code_big-txt {
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: @main-color;
+    margin: 0 0 4px 0;
+
+    @media @size-xs {
+      font-size: 12px;
+    }
+  }
+
+  &__code_title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    margin: 0 0 4px 0;
+
+    @media @size-xs {
+      font-size: 18px;
+    }
+  }
+
+  &__get-btn_box {
+    margin: 20px 0 0 0;
+  }
+  &__get-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__btn-contairer {
+    background-color: #f7f7f7;
+    border-top: 1px solid #e0e0e0;
+    padding: 16px;
+  }
+
+  &__btn-watch {
+    border: none;
+    display: block;
+    background-color: #f7f7f7;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: center;
+    color: @gray-color;
+    margin: 0 auto;
+    .add-flex(flex, row, baseline);
+  }
+  &__btn-watch:hover {
+    color: @black-color;
+  }
+
+  &__btn-watch:hover &__btn-watch-span1 {
+    border-right: 2px solid @black-color;
+  }
+
+  &__btn-watch:hover &__btn-watch-span2 {
+    border-right: 2px solid @black-color;
+  }
+
+  &__add-info {
+    display: none;
+    margin-top: 16px;
+  }
+
+  &__btn-watch-span1 {
+    display: block;
+    margin: 4px 0 0 10px;
+    height: 10px;
+    border-right: 2px solid @gray-color;
+    transform: rotate(315deg);
+  }
+  &__btn-watch-span2 {
+    height: 10px;
+    margin: 4px 0 0 4px;
+    border-right: 2px solid @gray-color;
+    transform: rotate(45deg);
+  }
+}
+
+.d-block {
+  display: block;
+}
