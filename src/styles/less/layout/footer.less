@@ -1,1 +1,64 @@
 //main: ../../style.less
+
+.footer {
+  &__container {
+    .add-size-min-h(100%, 64px);
+    border-top: 1px solid #e0e0e0;
+    .add-flex(flex, row, space-beetwen);
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 16px 0 0 0;
+
+    @media @size-xs {
+      padding: 10px 0;
+      .add-size-min-h(100%, auto);
+    }
+  }
+
+  &__txt-box {
+    font-size: 12px;
+    line-height: 17px;
+
+    @media @size-xs {
+      width: 180px;
+    }
+  }
+
+  &__company-link {
+    text-decoration: none;
+    color: rgba(0, 89, 172, 1);
+    border-bottom: 1px solid rgba(18, 18, 206, 0.363);
+  }
+
+  &__company-link:hover {
+    color: @red-color;
+  }
+
+  &__contact-link:hover &__contact-svg {
+    filter: invert(33%) sepia(51%) saturate(118%) hue-rotate(116deg)
+      brightness(34%) contrast(41%);
+    cursor: pointer;
+  }
+
+  &__links-box {
+    width: 120px;
+
+    @media @size-xs {
+      width: 80px;
+    }
+  }
+
+  &__contact-link {
+    text-decoration: none;
+  }
+
+  &__contact-svg {
+    .add-size-min-h(32px, 32px);
+    margin: 0 0 0 16px;
+
+    @media @size-xs {
+      .add-size-min-h(24px, 24px);
+      margin: 0 0 0 10px;
+    }
+  }
+}
