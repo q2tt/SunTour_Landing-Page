@@ -1768,7 +1768,7 @@ body {
   color: #CB0000;
 }
 .footer__contact-link:hover .footer__contact-svg {
-  filter: invert(33%) sepia(51%) saturate(118%) hue-rotate(116deg) brightness(34%) contrast(41%);
+  filter: invert(93%) sepia(191%) saturate(98%) hue-rotate(216deg) brightness(74%) contrast(91%);
   cursor: pointer;
 }
 .footer__links-box {
