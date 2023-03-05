@@ -16,7 +16,9 @@
     }
   }
 
-  &__txt-box {
+  &__logo-container {
+
+    .add-flex(flex, row,  baseline);
     font-size: 12px;
     line-height: 17px;
 
@@ -25,15 +27,31 @@
     }
   }
 
-  &__company-link {
-    text-decoration: none;
-    color: rgba(0, 89, 172, 1);
-    border-bottom: 1px solid rgba(18, 18, 206, 0.363);
+  &__logo-txt {
+    display: block;
+    .add-size(150px, auto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 133px 0 43px;
+
+    @media @size-xl {
+      margin: 0 80px 0 43px;
+    }
+
+    @media @size-l {
+      margin: 0 40px 0 23px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media @size-md {
+      margin: 1px 15px 0 15px;
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
-  &__company-link:hover {
-    color: @red-color;
-  }
 
   &__contact-link:hover &__contact-svg {
     filter: invert(93%) sepia(191%) saturate(98%) hue-rotate(216deg)
@@ -60,6 +78,21 @@
     @media @size-xs {
       .add-size-min-h(24px, 24px);
       margin: 0 0 0 10px;
+    }
+  }
+
+  &__logo-svg {
+    .add-size(169px, 43px);
+  
+    filter: invert(83%) sepia(21%) saturate(118%) hue-rotate(186deg)
+    brightness(114%) contrast(91%);
+
+    @media @size-l {
+      .add-size(149px, 40px);
+    }
+
+    @media @size-md {
+      .add-size(60px, 26px);
     }
   }
 }
